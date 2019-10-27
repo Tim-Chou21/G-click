@@ -26,11 +26,12 @@ myNameSpace = function(){
 
 	// Public functions ******************************************************************************************
 	
+	
 	function init()
 	{
 		// in iPad, the background image, when rendered, is kinda sucky, so change it to just a backgroundcolor
 		doIpadBackground();
-		              
+		
 		generateNumbers(hours,24);
 		generateNumbers(minutes,60);
 		generateNumbers(seconds,60);
@@ -42,6 +43,12 @@ myNameSpace = function(){
 		body.style.opacity = "1";    
 	}
 	
+	function hhh(hook,isUp){
+		offsetY = hook.offsetTop + lineHeight;
+		hook.style.top = offsetY + "px"
+		console.log("scroll");
+	}
+
 	function onResizeWindow()
 	{
 		centerBox(container);
@@ -57,7 +64,12 @@ myNameSpace = function(){
 	}
 	
 	function startTime()
-	{                        
+	{   
+		// document.getElementById("").addEventListener('touchend', function (event) {
+		// 	var currentLoadout = document.getElelementById(‘currentLoadout).innerHTML;
+		// 	ACBridge.click("selectLoadout|" + currentLoadout);
+		// }, false);
+
 		if(isTimeStarted)
 		{
 			window.clearInterval(timer_id);
@@ -68,9 +80,8 @@ myNameSpace = function(){
 			if (isStopwatch)
 			{				
 				var offsetTop = offset + "px";
-								   
 				timer_id = window.setInterval(function(){
-						secTime++;                       
+					secTime++;                       
 						if (secTime == 60)
 						{
 							seconds.style.top = offsetTop;
@@ -102,6 +113,12 @@ myNameSpace = function(){
 						{
 							seconds.style.top = seconds.offsetTop - lineHeight + "px";
 						}
+						console.log(secTime);
+						console.log(minTime);
+						console.log(hourTime);
+						var totalSec = secTime + 60 * minTime + 3600 * hourTime;
+						console.log("secTime|" + totalSec);
+						ACBridge.click("secTime|" + totalSec)
 					},1000);					
 			}
 			else // if timer mode
@@ -114,7 +131,13 @@ myNameSpace = function(){
 				}
 				
 				timer_id = window.setInterval(function(){
-						secTime--;                       
+						// console.log(secTime);
+						// console.log(minTime);
+						// console.log(hourTime);
+						
+						// console.log("secTime|" + secTime + 60 * minTime + 3600 * hourTime);
+						// ACBridge.click("secTime|" + secTime + 60 * minTime + 3600 * hourTime);                       
+						secTime--;
 						if (secTime == -1)
 						{	
 							seconds.style.top = offset + lineHeight - seconds.offsetHeight;
@@ -147,6 +170,12 @@ myNameSpace = function(){
 						{
 							seconds.style.top = seconds.offsetTop + lineHeight + "px";
 						}
+						console.log(secTime);
+						console.log(minTime);
+						console.log(hourTime);
+						var totalSec = secTime + 60 * minTime + 3600 * hourTime;
+						console.log("secTime|" + totalSec);
+						ACBridge.click("secTime|" + totalSec)
 					},1000);
 			}
 				
