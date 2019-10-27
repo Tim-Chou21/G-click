@@ -18,6 +18,7 @@ function initApp() {
 
          firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
              console.log("inininin base")
+             
              window.location.replace('main_ui.html');
         }).catch(function (error) {
             // Handle Errors here.

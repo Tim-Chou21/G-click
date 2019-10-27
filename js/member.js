@@ -20,15 +20,17 @@ function init() {
             
             // else if ()
             // firebase.database().ref('/online_user').update({a:});
-           
+           console.log("ininininininininini")
             firebase.database().ref('/online_user/user_number').once('value').then(function(snapshot) {
                 if(snapshot.val() == null) {
+                    console.log("in 1")
                     firebase.database().ref('/online_user').set({user_number:1});
                     user_number.innerHTML = "<p class='navbar-text' style='position: absolute;top: 7px; margin-right: 10px;' >" + "線上人數 : "+ 1 + "</p>";
                 }
                 else {
+                    console.log("in 2")
                     firebase.database().ref('/online_user').update({user_number:snapshot.val()})
-                    var unumber = snapshot.val();
+                    var unumber = snapshot.val()+1;
                     user_number.innerHTML = "<p class='navbar-text' style='position: absolute;top: 20%; margin-left: 15%;' >" + "線上人數 : "+ unumber + "</p>";
                 }
             // ...
