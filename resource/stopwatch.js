@@ -53,7 +53,7 @@ myNameSpace = function(){
 		positionArrows(seconds,arrowUpSec,arrowDownSec);
 		
 		positionAbout(about);
-		positionLinks(links);
+		//positionLinks(links);
 	}
 	
 	function startTime()
@@ -360,11 +360,11 @@ myNameSpace = function(){
 		arrowDown.style.top = container.offsetTop + container.offsetHeight - (arrowDown.offsetHeight / 2) + "px";
 	}
 	
-	function positionLinks(links)
-	{
-		links.style.top = window.innerHeight - 10 - links.offsetHeight + "px";	
-		links.style.left = window.innerWidth - 10 - links.offsetWidth + "px";
-	}
+	//function positionLinks(links)
+	//{
+	//	links.style.top = window.innerHeight - 10 - links.offsetHeight + "px";	
+	//	links.style.left = window.innerWidth - 10 - links.offsetWidth + "px";
+	//}
 	
 	function positionAbout(about)
 	{
