@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Arx Interface</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="resource/main.css" />
+		<link rel="Shortcut Icon" href=none>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script> 
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-storage.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/member.js"></script>
+	</head>
+	<body id="mainb">
+
+				<!--nav>
+						<ul>
+						  <li>
+							<input class="ret" type="button" value="return" onclick="location.href='main_ui.html'">
+						  </li>
+						  <li>
+								<span>G-Click</span>
+						  </li>
+						  <li>
+								<input class="mem" type="image" value=""  src="member.png" title="mem"/>
+						  </li>
+						  <li>
+								<input class="mem" type="image" value=""  src="member.png" title="mem"/>
+						  </li>
+						</ul-->
+		<!-- <header>		 
+			<p>
+				<a href="main_ui.html">
+					<input class="ret" type="image" value=""  src="resource/UIimg/return.png" title="ret"/>
+				</a>
+				<span>G-Click</span>
+				
+				<input class="mem" type="image" value=""  src="resource/UIimg/member.png" title="mem"/>
+				<input class="mem" type="image" value=""  src="resource/UIimg/member.png" title="mem"/>
+				<input class="mem" type="image" value=""  src="resource/UIimg/member.png" title="mem"/>
+				<input class="mem" type="image" value=""  src="resource/UIimg/member.png" title="mem"/>
+				<input class="mem" type="image" value=""  src="resource/UIimg/member.png" title="mem"/>
+			</p>
+		</header --> 
+		<nav class="navbar-expand-md bg-dark navbar-dark">
+			<a class="navbar-brand" href="#"><span>G-Click</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			  <ul class="navbar-nav">
+			 <!-- trouble here -->
+				<li class="nav-item" id="dynamic-email">
+				<!-- expect an email address -->
+				</li>
+				<li class="nav-item" id="logout-btn">
+				<a class="nav-link" style="position: absolute;top: 5%; margin-right: 50px; font-size: 30px;">Sign_Out</a>
+				<!---a href="main_ui.html">
+						<input class="ret" type="image" value=""  src="resource/UIimg/return.png" title="ret"/>
+					</a-->
+				</li>
+				<li class="nav-item" id="user_number">
+					<!-- expect an email address -->
+				</li>
+			  </ul>
+			</div>
+		 </nav>
+		<div>
+			<p>
+				<a href="resource/AWW.html">
+					<input class="pen" type="image" value=""  src="resource/UIimg/pen.png" title="pen"/>
+				</a>
+			</p>
+			<p>
+				<a href="resource/transcript.html">
+					<input class="micro" type="image" value=""  src="resource/UIimg/micro.png" title="micro"/>
+				</a>
+			</p>
+			<p>
+				<a href="resource/timer.html">
+					<input class="timer" type="image" value=""  src="resource/UIimg/timer.png" title="calen"/>
+				</a>
+			</p>
+		</div><br>
+		<div>
+			<p>
+				<a href="#">
+					<input class="gantt" type="image" value=""  src="resource/UIimg/gantt.png" title="timer"/>
+				</a>
+			</p>
+			<p>
+				<a href="resource/transcript.html">
+					<input class="share" type="image" value=""  src="resource/UIimg/text.png" title="share"/>
+				</a>
+			</p>
+			<p>
+				<a href="main_ui.html">
+					<input class="vote" type="image" value=""  src="resource/UIimg/vote.png" title="vote"/>
+				</a>
+			</p>
+		</div><br>
+		<div>
+			<p>
+				<a>
+					<input onclick="mw()" class="trello" type="image" value=""  src="resource/UIimg/trello.png" title="trello"/>
+				</a>
+			</p>
+			<p>
+				<a href="resource/log.html">
+					<input class="log" type="image" value=""  src="resource/UIimg/log.png" title="log"/>
+				</a>
+			</p>
+			<p>
+				<a href="main_ui.html">
+					<input class="set" type="image" value=""  src="resource/UIimg/set.png" title="set"/>
+				</a>
+			</p>
+		</div>
+		<script>
+			function mw(){
+				system("start https://trello.com/user61822797/home");
+			}
+		</script>
+		<!-- Scripts >
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/main.js"></script-->
+	</body>
+</html>

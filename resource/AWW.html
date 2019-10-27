@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Arx Interface</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="main.css" />
+        <link rel="Shortcut Icon" href=none>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script> 
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-storage.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
+		<script src="../js/config.js"></script>
+		<script src="../js/member.js"></script>
+    </head>
+    <body id="AWWb">
+        <!--header>
+            </p>
+                <a href="../main_ui.html">
+                    <input class="ret" type="image" value=""  src="UIimg/return.png" title="ret"/>
+                </a>
+                <span>G-Click</span>
+                <input class="mem" type="image" value=""  src="UIimg/member.png" title="mem"/>
+                <input class="mem" type="image" value=""  src="UIimg/member.png" title="mem"/>
+                <input class="mem" type="image" value=""  src="UIimg/member.png" title="mem"/>
+                <input class="mem" type="image" value=""  src="UIimg/member.png" title="mem"/>
+                <input class="mem" type="image" value=""  src="UIimg/member.png" title="mem"/>
+            </p>
+        </header-->
+        <nav class="navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="#"><span>G-Click</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                <!-- trouble here -->
+                <li class="nav-item" id="dynamic-email">
+                <!-- expect an email address -->
+                </li>
+                <!--li class="nav-item" id="logout-btn">
+                <a class="nav-link" style="position: relative;top: 7px; margin-right: 5px;">Sign_Out</a>
+                </li-->
+                <li>
+                    <a href="../main_ui.html">
+                        <input class="ret" type="image" value=""  src="UIimg/sign.png" title="ret"/>
+                    </a>
+                </li>
+                <li class="nav-item" id="user_number">
+                <!-- expect an email address -->
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <iframe class="frame" src="https://awwapp.com/b/uwwezwktx/" frameborder="0" scrolling="auto">
+            <div style="width: 600px; height: 400px;" id="aww-wrapper">
+            </div>
+        </iframe> 
+
+        <!-- <div id="aww-wrapper"></div> -->
+        <script src="https://awwapp.com/static/widget/js/aww.min.js">
+        </script>
+        <script type="text/javascript"> 
+            var aww = new AwwBoard('#aww-wrapper', {
+                    apiKey: '7e3e728f-0380-42f7-a5dd-7f8ddb25502c',
+                    autojoin: true,
+                    boardLink: 'wojiubuxiangxinninengkandong',
+                    // sizes: [3, 5, 8, 13, 20],
+                    // fontSizes: [10, 12, 16, 22, 30],
+                    // menuOrder: ['colors', 'sizes', 'tools', 'admin',
+                    //   'utils'],
+                    // tools: ['pencil', 'eraser', 'text', 'image'],
+                    // colors: [ "#000000", "#f44336", "#4caf50", "#2196f3",
+                    //   "#ffc107", "#9c27b0",     "#e91e63", "#795548"],
+                    // defaultColor: "#000000",
+                    // defaultSize: 8,
+                    // defaultTool: 'pencil',
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,523 @@
+/*body{
+    background-image:url('backg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 100%;
+}*/
+#mainb{
+    background-image:url('UIimg/backg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 100%;
+}
+#AWWb{
+    background-color: white;
+    display: block;
+    width: 100%;
+}
+#transb{
+    background-color: white;
+    display: block;
+    width: 100%;
+}
+span{
+    margin-left: 0%;
+    font-size:50px;
+    font-family: Impact;
+    color: white;
+    text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+}
+header{
+    width:100%;
+    height:80px;
+    top:0;
+    left:0;
+    position: absolute;
+    background:rgb(255,255,255);
+    text-align: center;
+    margin-bottom: 50px;
+    z-index: 5;
+}
+nav{
+    width:100%;
+    height:80px;
+    top:0;
+    left:0;
+    position: absolute;
+    background:grey;
+    text-align: center;
+    margin-bottom: 50px;
+    z-index: 5;
+  }
+
+.frame{
+    width: 100%;
+    left:0;
+    position: absolute;
+    height: 728px;
+}
+.ret{
+    float:left;
+    width:60px;
+    height:60px;
+    margin-left: 3%;
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    border: 1px, grey;
+}
+.signout{
+    float:left;
+    width:60px;
+    height:60px;
+    margin-left: 3%;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    border: 1px, grey
+}
+.mem{
+    float:right;
+    width:40px;
+    height:40px;
+    margin-right:2%;
+}
+.pen{
+    /*background-image:url('asset/pen.png');*/
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-top: 10%;
+    margin-left: 5%;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    background:rgba(255, 255, 255, 0.5);
+    border-radius:50px;
+    padding:2.5%;
+}
+.micro{
+    /*background-image:url('asset/pen.png');*/
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-top: 10%;
+    margin-left: 5%;
+    cursor: pointer;
+    background:rgba(255, 255, 255, 0.5);
+    border-radius:50px;
+    padding:2.5%;
+    text-align: center;
+    outline: none;
+}
+.timer{
+    /*background-image:url('asset/pen.png');*/
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 0%;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    background:rgba(255, 255, 255, 0.5);
+    border-radius:50px;
+    padding:2.5%;
+}
+.gantt{
+    /*background-image:url('asset/pen.png');*/
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top: 3%;
+    margin-left: 10%;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    background:rgba(255, 255, 255, 0.5);
+    border-radius:25px;
+    padding:2.5%;
+}
+.vote{
+    /*background-image:url('asset/pen.png');*/
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top: 3%;
+    margin-left: 15%;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    background:rgba(255, 255, 255, 0.5);
+    border-radius:25px;
+    padding:2.5%;
+}
+.share{
+    /*background-image:url('asset/pen.png');*/
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top: 3%;
+    margin-left: 15%;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    background:rgba(255, 255, 255, 0.5);
+    border-radius:25px;
+    padding:2.5%;
+}
+.trello{
+    /*background-image:url('asset/pen.png');*/
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top: 2%;
+    margin-left: 10%;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    background:rgba(255, 255, 255, 0.5);
+    border-radius:25px;
+    padding:2.5%;
+}
+.log{
+    /*background-image:url('asset/pen.png');*/
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top: 2%;
+    margin-left: 15%;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    background:rgba(255, 255, 255, 0.5);
+    border-radius:25px;
+    padding:2.5%;
+}
+.set{
+    /*background-image:url('asset/pen.png');*/
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top: 2%;
+    margin-left: 15%;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    background:rgba(255, 255, 255, 0.5);
+    border-radius:25px;
+    padding:2.5%;
+}
+
+@media screen and (max-width:480px) { 
+    .pen{
+        width: 100px;
+        height: 100px;
+    }
+    .micro{
+        width: 100px;
+        height: 100px;
+        margin-right: 10%;
+    }
+    .timer{
+        width: 100px;
+        height: 100px;
+        margin-top: 20%;
+        margin-left: 0px;
+        margin-right: 0px;
+        float: left;
+    }
+    .gantt{
+        width: 100px;
+        height: 100px;
+        margin-top: 20%;
+        margin-left: 12%;
+        margin-right: 10%;
+        float: left;
+    }
+    .log{
+        width: 100px;
+        height: 100px;
+        margin-top: 20%;
+        margin-left: 0px;
+        float: left;
+    }
+    .vote{
+        width: 100px;
+        height: 100px;
+        margin-top: 20%;
+        margin-left: 0px;
+        float: left;
+    }
+    .set{
+        width: 100px;
+        height: 100px;
+        margin-top: 20%;
+        margin-left: 12%;
+        margin-right: 10%;
+        float: left;
+    }
+    .share{
+        width: 100px;
+        height: 100px;
+        margin-top: 20%;
+        margin-left: 12%;
+        margin-right: 10%;
+        float: left;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px) { 
+    header{
+        height: 50px;
+    }
+    nav{
+        height: 50px;
+    }
+    #wb_h{
+        height: 70px;
+    }
+    .ret{
+        width: 30px;
+        height: 30px;
+    }
+    .mem{
+        width: 20px;
+        height: 20px;
+    }
+    span{
+        font-size: 25px;
+    }
+    .pen{
+        width: 100px;
+        height: 100px;
+        border-radius:20px;
+        margin-left: 18%;
+    }
+    .micro{
+        width: 100px;
+        height: 100px;
+        border-radius:20px;
+        margin-left: 10%;
+    }
+    .timer{
+        width: 100px;
+        height: 100px;
+        margin-right: 0px;
+        border-radius:20px;
+        margin-left: 10%;
+    }
+    .gantt{
+        width: 70px;
+        height: 70px;
+        margin-top: 1%;
+        margin-left: 20%;
+        border-radius:20px;
+    }
+    .vote{
+        width: 70px;
+        height: 70px;
+        margin-top: 1%;
+        border-radius:20px;
+    }
+    .share{
+        width: 70px;
+        height: 70px;
+        margin-top: 1%;
+        border-radius:20px;
+    }
+    .trello{
+        width: 70px;
+        height: 70px;
+        margin-top: 1%;
+        margin-left: 20%;
+        border-radius:20px;
+    }
+    .log{
+        width: 70px;
+        height: 70px;
+        margin-top: 1%;
+        border-radius:20px;
+    }
+    .set{
+        width: 70px;
+        height: 70px;
+        margin-top: 1%;
+        border-radius:20px;
+    }
+
+}
+@media screen and (min-width:769px) and (max-width:1200px){
+    .pen{
+        width: 250px;
+        height: 250px;
+    }
+    .micro{
+        width: 250px;
+        height: 250px;
+    }
+    .timer{
+        width: 250px;
+        height: 250px;
+    }
+    .gantt{
+        width: 150px;
+        height: 150px;
+        
+    }
+    .vote{
+        width: 150px;
+        height: 150px;
+        
+    }
+    .share{
+        width: 150px;
+        height: 150px;
+        
+    }
+    .trello{
+        width: 150px;
+        height: 150px;
+        
+    }
+    .log{
+        width: 150px;
+        height: 150px;
+        
+    }
+    .set{
+        width: 150px;
+        height: 150px;
+        
+    }
+    .trello{
+        width: 150px;
+        height: 150px;
+    }
+}
+.pen:hover{
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.pen:active{
+    -moz-transform: scale3d(1.1, 1.1, 1);
+    -o-transform: scale3d(1.1, 1.1, 1);
+    -ms-transform: scale3d(1.1, 1.1, 1);
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+.micro:hover{
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.micro:active{
+    -moz-transform: scale3d(1.1, 1.1, 1);
+    -o-transform: scale3d(1.1, 1.1, 1);
+    -ms-transform: scale3d(1.1, 1.1, 1);
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+.calen:hover{
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.calen:active{
+    -moz-transform: scale3d(1.1, 1.1, 1);
+    -o-transform: scale3d(1.1, 1.1, 1);
+    -ms-transform: scale3d(1.1, 1.1, 1);
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+.timer:hover{
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.timer:active{
+    -moz-transform: scale3d(1.1, 1.1, 1);
+    -o-transform: scale3d(1.1, 1.1, 1);
+    -ms-transform: scale3d(1.1, 1.1, 1);
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+.log:hover{
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.log:active{
+    -moz-transform: scale3d(1.1, 1.1, 1);
+    -o-transform: scale3d(1.1, 1.1, 1);
+    -ms-transform: scale3d(1.1, 1.1, 1);
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+.set:hover{
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.set:active{
+    -moz-transform: scale3d(1.1, 1.1, 1);
+    -o-transform: scale3d(1.1, 1.1, 1);
+    -ms-transform: scale3d(1.1, 1.1, 1);
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+.vote:hover{
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.vote:active{
+    -moz-transform: scale3d(1.1, 1.1, 1);
+    -o-transform: scale3d(1.1, 1.1, 1);
+    -ms-transform: scale3d(1.1, 1.1, 1);
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+.share:hover{
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.share:active{
+    -moz-transform: scale3d(1.1, 1.1, 1);
+    -o-transform: scale3d(1.1, 1.1, 1);
+    -ms-transform: scale3d(1.1, 1.1, 1);
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+.trello:hover{
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.trello:active{
+    -moz-transform: scale3d(1.1, 1.1, 1);
+    -o-transform: scale3d(1.1, 1.1, 1);
+    -ms-transform: scale3d(1.1, 1.1, 1);
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+.gantt:hover{
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.gantt:active{
+    -moz-transform: scale3d(1.1, 1.1, 1);
+    -o-transform: scale3d(1.1, 1.1, 1);
+    -ms-transform: scale3d(1.1, 1.1, 1);
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
