@@ -23,11 +23,23 @@ body
 }
 .ipadBody
 {
-	/*
-	background-image:none;
-	*/
+	margin:5px;
+	
+	border: 1px solid rgba(255,255,255,0.5);
+	border-radius:10px;
 	background-image:url('res/bgbg.jpg');
-	background-color:#62B1FF;	
+	
+	background-size: cover;
+	/*
+	background-repeat:repeat;
+	
+	opacity:0;
+	
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	*/
+	font-size:100%;	
 }
 .spacer
 {
